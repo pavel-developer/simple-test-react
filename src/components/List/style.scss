@@ -1,0 +1,46 @@
+.List-Wrapper {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+
+  .List {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .Item {
+      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+
+      &-Title {
+        color: #455963;
+        font-size: 18px;
+      }
+
+      &-Desc {
+        color: #90a4ae;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .List-Wrapper {
+    padding-left: 30px;
+
+    .List {
+      align-items: flex-start;
+      .Item {
+        width: 100%;
+      }
+    }
+  }
+}
